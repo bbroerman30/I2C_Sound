@@ -19,7 +19,9 @@ I wrote this for my Fallout 4 PipBoy 3000 project, as I was unsatisfied using th
 
 Start by including the library header file 
 
-`#include "I2C_SoundBoard.h";`
+```
+  #include "I2C_SoundBoard.h";
+```
 
 Then, declare an instance of the class:  
 
@@ -34,11 +36,15 @@ Then, declare an instance of the class:
 
 Then call begin in your startup function:
 
-` sound.begin( I2C_DEV_ADDR, &Wire );`
+```
+  sound.begin( I2C_DEV_ADDR, &Wire );
+```
 
  In the remainder of your program, just make the calls as needed:
 
-` sound.setVolume(6);
- sound.playSound( "radio4", 0, false );`
+```
+   sound.setVolume(6);
+   sound.playSound( "radio4", 0, false );`
+```
 
  etc.
