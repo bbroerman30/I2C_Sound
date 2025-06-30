@@ -23,11 +23,13 @@ Start by including the library header file
 
 Then, declare an instance of the class:  
 
-`//
-// Address for the I2C controlled sound board.
-//
-#define I2C_DEV_ADDR 0x55
-I2C_SoundBoard sound;`
+```
+  //
+  // Address for the I2C controlled sound board.
+  //
+  #define I2C_DEV_ADDR 0x55
+  I2C_SoundBoard sound;
+```
 
 
 Then call begin in your startup function:
